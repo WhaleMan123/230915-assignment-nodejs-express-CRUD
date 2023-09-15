@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>글 제목: {{title}}</p>
+    <p>작성일 : {{created_at}}</p>
+    <p>작성자 : {{writer}}</p>
+    <p>글 내용 : {{content}}</p>
+    <p>조회수 : {{hit}}</p>
+    <a href="/boards/list">리스트 가기</a>
+    <a href="/boards/modify?id={{id}}">글 수정</a>
+    <form method="post" action="/boards/delete?id={{id}}">
+      <button>글 삭제</button>
+    </form>
+  </body>
+</html>
